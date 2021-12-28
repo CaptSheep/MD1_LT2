@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra nam nhuan</title>
+</head>
+<body>
+<script>
+
+    function CheckNamNhuan(year){
+        year = prompt("Nhap nam de kiem tra : ")
+        if(year % 4 == 0){
+            if(year % 100 == 0 ){
+                if ( year % 400 == 0){
+                    alert ( year + " la nam nhuan")
+                }
+                else {
+                    alert (year + " khong phai la nam nhuan")
+                }
+            }else{
+                alert (year + " la nam nhuan ")
+            }
+        }
+        else {
+            alert ( year + " khong phai nam nhuan")
+        }
+    }
+    CheckNamNhuan()
+
+
+</script>
+</body>
+</html>
